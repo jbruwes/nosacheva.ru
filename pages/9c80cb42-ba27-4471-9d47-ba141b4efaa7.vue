@@ -40,96 +40,15 @@
         <p>&nbsp;</p>
         <div class="ui six doubling centered cards">
             <div class="ui card" v-for="({ src, title }, index) in dip1"><el-image :src="`images/${src}`"
-                    :preview-src-list="srcList1" :initial-index="index" fit="cover" :alt="title" :title="title"></el-image>
+                    :preview-src-list="srcList1" :initial-index="index" fit="cover" :alt="title"
+                    :title="title"></el-image>
             </div>
         </div>
         <div class="ui six doubling centered cards">
-            <div class="ui card"><a class="image" href="bitva.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом программы Битва экстрасенсов" src="bitva_m.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом программы Битва экстрасенсов"></a></div>
-            <div class="ui card"><a class="image" href="att.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом профессора народной медицины" src="att_m.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом профессора народной медицины"></a></div>
-            <div class="ui card"><a class="image" href="2012.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат преподавателя Н.Носачевой" src="2012_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат преподавателя Н.Носачевой"></a></div>
-            <div class="ui card"><a class="image" href="2014.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат аккредитации специалиста оздоровительных практик"
-                        src="2014_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат аккредитации специалиста оздоровительных практик"></a>
+            <div class="ui card" v-for="({ src, title }, index) in dip2"><el-image :src="`images/${src}`"
+                    :preview-src-list="srcList2" :initial-index="index" fit="cover" :alt="title"
+                    :title="title"></el-image>
             </div>
-            <div class="ui card"><a class="image" href="d1-2.jpg"><img
-                        title="Наталия Григорьевна Носачева Грамота о присвоении графского титула" src="d1_m2.jpg"
-                        alt="Наталия Григорьевна Носачева Грамота о присвоении графского титула"></a></div>
-            <div class="ui card"><a class="image" href="d2-2.jpg"><img
-                        title="Наталия Григорьевна Носачева Медаль Звезда Надежды и другие награды" src="d2_m2.jpg"
-                        alt="Наталия Григорьевна Носачева Медаль Звезда Надежды и другие награды">&gt;</a></div>
-            <div class="ui card"><a class="image" href="d3-2.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом за особые заслуги в области создания, применения и внедрения новых технологий и приборов в традиционную медицину"
-                        src="d3_m2.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом за особые заслуги в области создания, применения и внедрения новых технологий и приборов в традиционную медицину"></a>
-            </div>
-            <div class="ui card"><a class="image" href="d4-2.jpg"><img
-                        title="Наталия Григорьевна Носачева иплом о присвоении звания Мэтр науки и практики"
-                        src="d4_m2.jpg"
-                        alt="Наталия Григорьевна Носачева иплом о присвоении звания Мэтр науки и практики"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d5.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом за бескорыстное служение и высокий профессионализм в целительской деятельности и присвоение звания Мастер - золотые руки"
-                        src="files/ordena/d/d5_m.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом за бескорыстное служение и высокий профессионализм в целительской деятельности и присвоение звания Мастер - золотые руки"></a>
-            </div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d6.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат I Всероссийская научно-практическая конференция Народная медицина в онкологии"
-                        src="files/ordena/d/d6_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат I Всероссийская научно-практическая конференция Народная медицина в онкологии"></a>
-            </div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d7.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат Лучший целитель России по направлению Биоэнерготерапия"
-                        src="files/ordena/d/d7_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат Лучший целитель России по направлению Биоэнерготерапия"></a>
-            </div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d8.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом за выдающиеся достижения в комплементарной медицине"
-                        src="files/ordena/d/d8_m.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом за выдающиеся достижения в комплементарной медицине"></a>
-            </div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d9.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат 100 лучших хиллеров Мира"
-                        src="files/ordena/d/d9_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат 100 лучших хиллеров Мира"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d10.jpg"><img
-                        title="Наталия Григорьевна Носачева Диплом Ганновер" src="files/ordena/d/d10_m.jpg"
-                        alt="Наталия Григорьевна Носачева Диплом Ганновер"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d11.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат Посол Миссии Мира" src="files/ordena/d/d11_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат Посол Миссии Мира"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/d/d12.jpg"><img
-                        title="Наталия Григорьевна Носачева Премия имени святого Ивана Рилского"
-                        src="files/ordena/d/d12_m.jpg"
-                        alt="Наталия Григорьевна Носачева Премия имени святого Ивана Рилского"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/gramota2.jpg"><img
-                        title="Наталия Григорьевна Носачева Грамота на бриллиантовую диадему"
-                        src="files/ordena/gramota2_m.jpg"
-                        alt="Наталия Григорьевна Носачева Грамота на бриллиантовую диадему"></a></div>
-            <div class="ui card"><a class="image" href="files/ordena/sootvet.jpg"><img
-                        title="Наталия Григорьевна Носачева Сертификат соответствия инновационного центра Евразия"
-                        src="files/ordena/sootvet_m.jpg"
-                        alt="Наталия Григорьевна Носачева Сертификат соответствия инновационного центра Евразия"></a>
-            </div>
-            <div class="ui card"><a class="image" href="files/elite.jpg"><img
-                        title="Наталия Григорьевна Носачева Элита специалистов традиционной и народной медицины и целительства"
-                        src="files/elite_2.jpg"
-                        alt="Наталия Григорьевна Носачева Элита специалистов традиционной и народной медицины и целительства"></a>
-            </div>
-            <div class="ui card"><a class="image" href="dipnew1.jpg"><img
-                        class="img-rounded img-thumbnail wow animated flipInX" title="Наталия Григорьевна Носачева"
-                        src="dipnew1-2.jpg" alt="Наталия Григорьевна Носачева"></a></div>
-            <div class="ui card"><a class="image" href="dipnew2.jpg"><img
-                        class="img-rounded img-thumbnail wow animated flipInX" title="Наталия Григорьевна Носачева"
-                        src="dipnew2-2.jpg" alt="Наталия Григорьевна Носачева"></a></div>
-            <div class="ui card"><a class="image" href="dipnew3.jpg"><img
-                        class="img-rounded img-thumbnail wow animated flipInX" title="Наталия Григорьевна Носачева"
-                        src="dipnew3-2.jpg" alt="Наталия Григорьевна Носачева"></a></div>
         </div>
         <p>&nbsp;</p>
         <router-link :to="page.parent.to" class="ui labeled icon fluid red button"
@@ -166,7 +85,32 @@ const { id } = defineProps(["id"]),
         { src1: "gramota1.jpg", title: "Наталия Григорьевна Носачева Архиерейская грамота", src: "gramota1_m.jpg" },
         { src1: "dipnew4.jpg", title: "Наталия Григорьевна Носачева", src: "dipnew4-2.jpg" },
     ],
-    srcList1 = dip1.map(({src1})=> `images/${src1}`);
+    srcList1 = dip1.map(({ src1 }) => `images/${src1}`),
+    dip2 = [
+        { src1: "bitva.jpg", title: "Наталия Григорьевна Носачева Диплом программы Битва экстрасенсов", src: "bitva_m.jpg" },
+        { src1: "att.jpg", title: "Наталия Григорьевна Носачева Диплом профессора народной медицины", src: "att_m.jpg" },
+        { src1: "2012.jpg", title: "Наталия Григорьевна Носачева Сертификат преподавателя Н.Носачевой", src: "2012_m.jpg" },
+        { src1: "2014.jpg", title: "Наталия Григорьевна Носачева Сертификат аккредитации специалиста оздоровительных практик", src: "2014_m.jpg" },
+        { src1: "d1-2.jpg", title: "Наталия Григорьевна Носачева Грамота о присвоении графского титула", src: "d1_m2.jpg" },
+        { src1: "d2-2.jpg", title: "Наталия Григорьевна Носачева Медаль Звезда Надежды и другие награды", src: "d2_m2.jpg" },
+        { src1: "d3-2.jpg", title: "Наталия Григорьевна Носачева Диплом за особые заслуги в области создания, применения и внедрения новых технологий и приборов в традиционную медицину", src: "d3_m2.jpg" },
+        { src1: "d4-2.jpg", title: "Наталия Григорьевна Носачева иплом о присвоении звания Мэтр науки и практики", src: "d4_m2.jpg" },
+        { src1: "d5.jpg", title: "Наталия Григорьевна Носачева Диплом за бескорыстное служение и высокий профессионализм в целительской деятельности и присвоение звания Мастер - золотые руки", src: "d5_m.jpg" },
+        { src1: "d6.jpg", title: "Наталия Григорьевна Носачева Сертификат I Всероссийская научно-практическая конференция Народная медицина в онкологии", src: "d6_m.jpg" },
+        { src1: "d7.jpg", title: "Наталия Григорьевна Носачева Сертификат Лучший целитель России по направлению Биоэнерготерапия", src: "d7_m.jpg" },
+        { src1: "d8.jpg", title: "Наталия Григорьевна Носачева Диплом за выдающиеся достижения в комплементарной медицине", src: "d8_m.jpg" },
+        { src1: "d9.jpg", title: "Наталия Григорьевна Носачева Сертификат 100 лучших хиллеров Мира", src: "d9_m.jpg" },
+        { src1: "d10.jpg", title: "Наталия Григорьевна Носачева Диплом Ганновер", src: "d10_m.jpg" },
+        { src1: "d11.jpg", title: "Наталия Григорьевна Носачева Сертификат Посол Миссии Мира", src: "d11_m.jpg" },
+        { src1: "d12.jpg", title: "Наталия Григорьевна Носачева Премия имени святого Ивана Рилского", src: "d12_m.jpg" },
+        { src1: "gramota2.jpg", title: "Наталия Григорьевна Носачева Грамота на бриллиантовую диадему", src: "gramota2_m.jpg" },
+        { src1: "sootvet.jpg", title: "Наталия Григорьевна Носачева Сертификат соответствия инновационного центра Евразия", src: "sootvet_m.jpg" },
+        { src1: "elite.jpg", title: "Наталия Григорьевна Носачева Элита специалистов традиционной и народной медицины и целительства", src: "elite_2.jpg" },
+        { src1: "dipnew1.jpg", title: "Наталия Григорьевна Носачева", src: "dipnew1-2.jpg" },
+        { src1: "dipnew2.jpg", title: "Наталия Григорьевна Носачева", src: "dipnew2-2.jpg" },
+        { src1: "dipnew3.jpg", title: "Наталия Григорьевна Носачева", src: "dipnew3-2.jpg" }
+    ],
+    srcList2 = dip2.map(({ src1 }) => `images/${src1}`);
 
 onMounted(() => { jarallax(jarallaxRef.value, {}) });
 </script>
