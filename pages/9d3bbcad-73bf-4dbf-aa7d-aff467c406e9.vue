@@ -109,7 +109,6 @@ onMounted(() => {
     document.addEventListener("scroll", scroll);
     scroll();
 });
-
 watch(() => route.name, () => { drawer.value = false });
 </script>
 <style>
