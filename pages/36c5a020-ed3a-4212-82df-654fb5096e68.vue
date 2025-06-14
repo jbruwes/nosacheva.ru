@@ -1,30 +1,67 @@
 <template>
-    <div class="ui container free">
-        <div class="ui basic vertical fitted segment jarallax mceNonEditable" style="min-height: 60vh;"
-            data-date="false" data-path="" data-description="true" data-auto="" data-id="pageheader">
-            <div class="ui active light dimmer">
-                <div class="content"><a class="ui header hvr-icon-wobble-vertical"
-                        style="font-family: Arsenal, sans-serif;"><i class="hvr-icon icon"></i><span class="ui"><span
-                                class="sub header"></span></span></a></div>
-            </div>
+    <div ref="jarallaxRef" class="ui basic vertical fitted segment jarallax mceNonEditable  min-h-[60vh]"
+        :style="`background-image:url(${url})`">
+        <div class="ui active light dimmer">
+            <div class="content"><a class="ui header hvr-icon-wobble-vertical massive inverted icon"
+                    style="font-family: Arsenal, sans-serif;"><i class="hvr-icon !h-28 icon mx-auto"
+                        :class="page.i"></i><span class="ui">{{ page.title }}<span class="sub header">{{
+                            page.description
+                            }}</span></span></a></div>
         </div>
     </div>
     <p>&nbsp;</p>
-    <div class="ui items mceNonEditable" data-children="" data-sort="false" data-reveal="true" data-deep="false"
-        data-length="" data-date="false" data-description="true" data-path="" data-auto="" data-id="list">
-        <div class="item">
-            <div class="ui small image">
-                <div class="ui inverted dimmer"><a class="ui circular inverted secondary icon button"><i
-                            class="icon"></i></a></div>
-                <img class="ui image" loading="lazy">
+    <div class="ui container">
+        <div class="ui items mceNonEditable" data-children="" data-sort="false" data-reveal="true" data-deep="false"
+            data-length="" data-date="false" data-description="true" data-path="" data-auto="" data-id="list">
+            <div v-for="(child, i) in page.$children" class="item animate__animated"
+                :class="{ animate__fadeInLeft: animate[i], invisible: !animate[i] }"
+                v-intersection-observer="([{ isIntersecting }]) => { animate[i] = isIntersecting }">
+                <div class="ui small image" ref="cards">
+                    <div class="ui inverted dimmer"><router-link :to="child.to"
+                            class="ui circular inverted secondary icon button"><i class="icon !h-3"
+                                :class="child.i"></i></router-link></div>
+                    <img class="ui image" loading="lazy" :src="child.images[0]?.url">
+                </div>
+                <div class="content"><router-link :to="child.to" class="ui header hvr-icon-wobble-vertical"
+                        style="font-family: Arsenal, sans-serif;"><i class="hvr-icon icon !inline-block"
+                            :class="child.i"></i><span class="ui">{{ child.title }}<span
+                                class="sub header"></span></span></router-link></div>
             </div>
-            <div class="content"><a class="ui header hvr-icon-wobble-vertical"
-                    style="font-family: Arsenal, sans-serif;"><i class="hvr-icon icon"></i><span class="ui"><span
-                            class="sub header"></span></span></a></div>
         </div>
+        <p>&nbsp;</p>
+        <router-link :to="page.parent.to" class="ui labeled icon fluid red button"
+            style="font-family: Arsenal, sans-serif;"><i class="left arrow icon"></i>на
+            главную</router-link>
     </div>
-    <p>&nbsp;</p>
-    <p><a class="ui labeled icon fluid red button mceNonEditable" style="font-family: Arsenal, sans-serif;"
-            data-reveal="true" data-path="" data-auto="" data-id="parentbutton"><i class="left arrow icon"></i>на
-            главную</a></p>
 </template>
+
+<script setup>
+import { useScriptTag } from "@vueuse/core";
+import { inject, onMounted, useTemplateRef, ref, onUnmounted } from "vue";
+import { jarallax } from "jarallax";
+import { vIntersectionObserver } from "@vueuse/components";
+
+const { id } = defineProps(["id"]),
+    page = inject("pages")[id],
+    [{ url }] = page.images,
+    jarallaxRef = useTemplateRef("jarallaxRef"),
+    cardRefs = useTemplateRef("cards"),
+    animate = ref([]),
+    { load: loadJQuery, unload: unloadJQuery } = useScriptTag("./node_modules/jquery/dist/jquery.min.js", () => { }, { manual: true }),
+    { load: loadFomantic, unload: unloadFomantic } = useScriptTag("./node_modules/fomantic-ui-css/semantic.min.js", () => { }, { manual: true });
+
+onMounted(async () => {
+    jarallax(jarallaxRef.value, {});
+    await loadJQuery();
+    await loadFomantic();
+    $(cardRefs.value).dimmer({
+        transition: "fade up",
+        on: "hover",
+    });
+});
+
+onUnmounted(async () => {
+    await unloadFomantic();
+    await unloadJQuery();
+});
+</script>
