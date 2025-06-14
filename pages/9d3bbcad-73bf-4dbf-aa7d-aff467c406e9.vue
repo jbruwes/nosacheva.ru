@@ -50,11 +50,10 @@
             </div>
             <p>&nbsp;</p>
             <p style="font-size: 10pt; text-align: center; color: #dcdcdc; padding-bottom: 5px;"><a
-                    class="hvr-wobble-skew" href="https://kosmos3.ru/" rel="noopener"
+                    class="hvr-wobble-skew" href="https://vuebro.ru/" rel="noopener"
                     style="color: #dcdcdc; font-family: Arsenal, sans-serif; font-size: 12px;"
-                    title="KosmoS3 удобный и гибкий инструмент для управления сайтом на S3" target="_blank">KosmoS3 <i
-                        class="hvr-icon icon rocket"><!-- --></i>удобный и гибкий инструмент для управления сайтом на
-                    S3</a>
+                    title="VueBro удобный и гибкий инструмент для управления сайтом" target="_blank">VueBro удобный и
+                    гибкий инструмент для управления сайтом на</a>
             </p>
         </div>
     </div>
