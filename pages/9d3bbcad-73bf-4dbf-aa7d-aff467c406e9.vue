@@ -53,7 +53,7 @@
                     class="hvr-wobble-skew" href="https://vuebro.ru/" rel="noopener"
                     style="color: #dcdcdc; font-family: Arsenal, sans-serif; font-size: 12px;"
                     title="VueBro удобный и гибкий инструмент для управления сайтом" target="_blank">VueBro удобный и
-                    гибкий инструмент для управления сайтом на</a>
+                    гибкий инструмент для управления сайтом</a>
             </p>
         </div>
     </div>
