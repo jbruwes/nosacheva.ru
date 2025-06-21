@@ -15,6 +15,32 @@
                 враче,
                 целителе и педагоге Наталии Григорьевне Носачевой от её учеников.</span></h1>
         <p>&nbsp;</p>
+
+        <p style="text-align: justify; margin-top: 30px;">Каждый человек способен самостоятельно организовать свою жизнь
+            таким образом, чтобы активизировались и заработали в полную силу механизмы саморегуляции. Именно этому,
+            более 20 лет, <span style="color: var(--un-prose-body); font-weight: bolder;">Наталия Григорьевна
+            </span><span style="color: var(--un-prose-body);">обучала</span>&nbsp;в <a href="https://natalie-school.ru/"
+                target="_blank"><strong>"Школе саморегуляции"</strong></a>.</p>
+        <p style="margin-top: 30px; text-align: justify;">Начатый Наталией Григорьевной путь не прервался. Мы, её
+            ученики,&nbsp;<span style="color: var(--un-prose-body);">адаптировали авторские практики под современные
+                реалии, сохранив их терапевтическую глубину и эффективность. На канале&nbsp;</span><a
+                href="https://t.me/SchoolSelfregulation" rel="noopener" target="_blank"><span
+                    style="font-weight: bolder;">ВзаимоДействие&nbsp;</span></a><span
+                style="color: var(--un-prose-body);">мы проводим&nbsp;</span><span
+                style="color: var(--un-prose-body); font-weight: bolder;">ежемесячные практические сессии</span><span
+                style="color: var(--un-prose-body);">&nbsp;с разбором кейсов и отвечаем на ваши вопросы.</span></p>
+        <p style="text-align: justify;">Если вы хотите овладеть навыками саморегуляции — научиться восстанавливать
+            силы, справляться с тревогой, работать с эмоциями и сохранять здоровье без медикаментов —
+            присоединяйтесь к нам!&nbsp;<span style="color: var(--un-prose-body);">Сегодня, в эпоху хронического стресса
+                и цифровой перегрузки, методики Наталии Григорьевны актуальны как никогда.</span></p>
+        <p>Также, вы можете записаться на <a href="https://natalie-school.ru/КОНТАКТЫ/" rel="noopener" target="_blank"
+                style="text-align: justify;"> <strong>индивидуальные консультации</strong></a> к наставникам.</p>
+        <p style="text-align: center;"><a href="https://t.me/SchoolSelfregulation" rel="noopener"
+                target="_blank"><button class="ui large pink basic button"
+                    style="font-family: Arsenal, sans-serif; border-radius: 20px;">TELEGRAM-КАНАЛ</button></a></p>
+
+
+
         <div class="ui three column centered stretched padded grid mceNonEditable stackable doubling">
             <div v-for="(child, i) in page.$children" class="column animate__animated"
                 :class="{ animate__flipInY: animate[i], invisible: !animate[i], }"
