@@ -25,21 +25,21 @@
             ученики,&nbsp;<span style="color: var(--un-prose-body);">адаптировали авторские практики под современные
                 реалии, сохранив их терапевтическую глубину и эффективность. На канале&nbsp;</span><a
                 href="https://t.me/SchoolSelfregulation" rel="noopener" target="_blank"><span
-                    style="font-weight: bolder;">ВзаимоДействие&nbsp;</span></a><span
-                style="color: var(--un-prose-body);">мы проводим&nbsp;</span><span
-                style="color: var(--un-prose-body); font-weight: bolder;">ежемесячные практические сессии</span><span
-                style="color: var(--un-prose-body);">&nbsp;с разбором кейсов и отвечаем на ваши вопросы.</span></p>
+                    style="font-weight: bolder;">ВзаимоДействие&nbsp;</span></a>мы проводим&nbsp;<span
+                style="color: var(--un-prose-body); font-weight: bolder;">ежемесячные практические сессии</span>&nbsp;с разбором кейсов и отвечаем на ваши вопросы.</p>
         <p style="text-align: justify;">Если вы хотите овладеть навыками саморегуляции — научиться восстанавливать
             силы, справляться с тревогой, работать с эмоциями и сохранять здоровье без медикаментов —
             присоединяйтесь к нам!&nbsp;<span style="color: var(--un-prose-body);">Сегодня, в эпоху хронического стресса
                 и цифровой перегрузки, методики Наталии Григорьевны актуальны как никогда.</span></p>
         <p>Также, вы можете записаться на <a href="https://natalie-school.ru/КОНТАКТЫ/" rel="noopener" target="_blank"
                 style="text-align: justify;"> <strong>индивидуальные консультации</strong></a> к наставникам.</p>
-        <p style="text-align: center;"><a href="https://t.me/SchoolSelfregulation" rel="noopener"
+        <p style="text-align: center;"><a href="https://natalie-school.ru/КОНТАКТЫ/" rel="noopener"
+                target="_blank"><button class="ui large pink basic button"
+                    style="font-family: Arsenal, sans-serif; border-radius: 20px;">КОНСУЛЬТАЦИИ</button></a> <a href="https://t.me/SchoolSelfregulation" rel="noopener"
                 target="_blank"><button class="ui large pink basic button"
                     style="font-family: Arsenal, sans-serif; border-radius: 20px;">TELEGRAM-КАНАЛ</button></a></p>
 
-
+<p>&nbsp;</p>
 
         <div class="ui three column centered stretched padded grid mceNonEditable stackable doubling">
             <div v-for="(child, i) in page.$children" class="column animate__animated"
