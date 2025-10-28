@@ -1,12 +1,9 @@
 <template>
-    <div ref="jarallaxRef" class="ui basic vertical fitted segment jarallax mceNonEditable  min-h-[60vh]"
-        :style="`background-image:url(${url})`">
+    <div ref="jarallaxRef" class="ui basic vertical fitted segment jarallax mceNonEditable  min-h-[60vh]" :style="`background-image:url(${url})`">
         <div class="ui active light dimmer">
-            <div class="content"><a class="ui header hvr-icon-wobble-vertical massive inverted icon"
-                    style="font-family: Arsenal, sans-serif;"><i class="hvr-icon !h-28 icon mx-auto"
-                        :class="page.i"></i><span class="ui">{{ page.title }}<span class="sub header">{{
+            <div class="content"><router-link class="ui header hvr-icon-wobble-vertical massive inverted icon" style="font-family: Arsenal, sans-serif;"><i class="hvr-icon !h-28 icon mx-auto" :class="page.i"></i><span class="ui">{{ page.title }}<span class="sub header">{{
                             page.description
-                        }}</span></span></a></div>
+                        }}</span></span></router-link></div>
         </div>
     </div>
     <p>&nbsp;</p>
@@ -46,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <p style="text-align: justify; margin-top: 30px;">Начатый Наталией Григорьевной путь не прервался &mdash; он
+        <p style="text-align: justify; margin-top: 30px;">Начатый Наталией Григорьевной путь не прервался — он
             обрёл
             собственную жизнь и продолжает жить в наших сердцах. Хотя формально Школу не возродить, мы, её ученики, не
             можем
@@ -54,9 +51,8 @@
         <p style="text-align: justify;">Мы хотим и готовы делиться своими знаниями и опытом. Сегодня, в эпоху
             хронического
             стресса и цифровой перегрузки, методики Наталии Григорьевны актуальны как никогда.</p>
-        <p style="text-align: justify;">Мы адаптировали авторские практики под современные вызовы, сохранив их
-            терапевтическую глубину и эффективность. На канале <a href="https://t.me/SchoolSelfregulation"
-                rel="noopener" target="_blank"><strong>ВзаимоДействие </strong></a>мы проводим <strong>ежемесячные
+        <p style="text-align: justify;">Мы адаптировали авторские практики под современные реалии, сохранив их
+            терапевтическую глубину и эффективность. На канале <a href="https://t.me/SchoolSelfregulation" rel="noopener" target="_blank"><strong>ВзаимоДействие </strong></a>мы проводим <strong>ежемесячные
                 практические
                 сессии</strong> с разбором кейсов и отвечаем на ваши вопросы.</p>
         <p style="text-align: justify;">Каждый участник становится хранителем уникальных знаний, которых не найти в
@@ -64,15 +60,10 @@
             источниках. Это ваш шанс получить доступ к методикам, меняющим качество жизни. Также, вы можете записаться
             на <a href="https://natalie-school.ru/КОНТАКТЫ/" rel="noopener" target="_blank"> <strong>индивидуальные
                     консультации</strong></a> к наставникам.</p>
-        <p style="text-align: center;"><a href="https://t.me/SchoolSelfregulation" rel="noopener"
-                target="_blank"><button class="ui large pink basic button"
-                    style="font-family: Arsenal, sans-serif; border-radius: 20px;">TELEGRAM-КАНАЛ</button></a></p>
+        <p style="text-align: center;"><a href="https://t.me/SchoolSelfregulation" rel="noopener" target="_blank"><button class="ui large pink basic button" style="font-family: Arsenal, sans-serif; border-radius: 20px;">TELEGRAM-КАНАЛ</button></a></p>
         <p>&nbsp;</p>
-        <p style="text-align: justify;"><a class="ui labeled icon fluid teal button" href="https://natalie-school.ru"
-                rel="noopener" style="font-family: Arsenal, sans-serif;" target="_blank"><i
-                    class="right arrow icon"></i>сайт Школы</a></p>
-        <router-link :to="page.parent.to" class="ui labeled icon fluid red button"
-            style="font-family: Arsenal, sans-serif;"><i class="left arrow icon"></i>на
+        <p style="text-align: justify;"><a class="ui labeled icon fluid teal button" href="https://natalie-school.ru" rel="noopener" style="font-family: Arsenal, sans-serif;" target="_blank"><i class="right arrow icon"></i>сайт Школы</a></p>
+        <router-link :to="page.parent.to" class="ui labeled icon fluid red button" style="font-family: Arsenal, sans-serif;"><i class="left arrow icon"></i>на
             главную</router-link>
     </div>
 </template>
